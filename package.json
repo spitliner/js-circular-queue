@@ -1,0 +1,52 @@
+{
+  "name": "js-circular-queue",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkgroll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spitliner/js-circular-queue.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spitliner/js-circular-queue/issues"
+  },
+  "homepage": "https://github.com/spitliner/js-circular-queue#readme",
+  "devDependencies": {
+    "pkgroll": "^2.1.1",
+    "typescript": "^5.5.2",
+    "xo": "^0.58.0"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "capitalized-comments": "off",
+      "yoda": "off",
+      "no-constant-binary-expression": 2,
+      "object-curly-spacing": "off",
+      "@typescript-eslint/object-curly-spacing": "off",
+      "import/extensions": 0
+    },
+    "ignores": [
+      "dist"
+    ]
+  }
+}
