@@ -41,6 +41,8 @@ export default class CircularQueue<T> {
             this.tail = (this.tail + 1) % this.capacity;
         }
 
+        this.size += elementList.length;
+
         this.check();
     }
 
@@ -79,6 +81,8 @@ export default class CircularQueue<T> {
 
             this.head += count % this.capacity;
         }
+
+        this.size -= count;
 
         return result;
     }
